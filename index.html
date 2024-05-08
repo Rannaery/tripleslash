@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" media="all" />
+    <link rel="icon" href="assets/images/icon.png">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>Triple Slash</title>
+  </head>
+  <body>
+    <script>
+      function handlePlayButton(video) {
+        if (screen.width <= 1080) {
+          if (video.hasAttribute("controls")) {
+            video.removeAttribute("controls");
+          } else {
+            video.setAttribute("controls", "controls");
+          }
+        }
+      }
+
+      function checkControls(video) {
+        if (video.hasAttribute("controls")) {
+          return;
+        }
+        video.setAttribute("controls");
+      }
+
+      function showPlaceholderImage(image, video) {
+        if (video.readyState === 0) {
+          video.style.display = "none";
+          document.getElementById(image).style.display = "block";
+        }
+      }
+
+      function removePlaceholderImage(image, video) {
+        document.getElementById(image).style.display = "none";
+        video.style.display = "inline";
+        handlePlayButton(video);
+      }
+    </script>
+
+    <div class="container">
+
+      <div class="page">
+        <img src="assets/images/item_240.png" loading="lazy" alt="Rectangle" class="painting" id="item240" data-src="assets/images/item_240.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_252.png" loading="lazy" alt="Rectangle" class="painting" id="item252" data-src="assets/images/item_252.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_266.png" loading="lazy" alt="Rectangle" class="painting" id="item266" data-src="assets/images/item_266.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_278.png" loading="lazy" alt="Rectangle" class="painting" id="item278" data-src="assets/images/item_278.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_291.png" loading="lazy" alt="Rectangle" class="painting" id="item278" data-src="assets/images/item_291.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_303.png" loading="lazy" alt="Rectangle" class="painting" id="item278" data-src="assets/images/item_303.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_315.png" loading="lazy" alt="Rectangle" class="painting" id="item278" data-src="assets/images/item_315.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_329.png" loading="lazy" alt="Rectangle" class="painting" id="item278" data-src="assets/images/item_329.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_342.png" loading="lazy" alt="Rectangle" class="painting" id="item278" data-src="assets/images/item_342.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_354.png" loading="lazy" alt="Rectangle" class="painting" id="item278" data-src="assets/images/item_354.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_366.png" loading="lazy" alt="Rectangle" class="painting" id="item366" data-src="assets/images/item_366.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_378.png" loading="lazy" alt="Rectangle" class="painting" id="item378" data-src="assets/images/item_378.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/01email.png" loading="lazy" alt="Rectangle" class="painting" id="item404" data-src="assets/images/emails/01email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_404.png" loading="lazy" alt="Rectangle" class="painting" id="item404" data-src="assets/images/item_404.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_416.png" loading="lazy" alt="Rectangle" class="painting" id="item416" data-src="assets/images/item_416.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_428.png" loading="lazy" alt="Rectangle" class="painting" id="item428" data-src="assets/images/item_428.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_440.png" loading="lazy" alt="Rectangle" class="painting" id="item440" data-src="assets/images/item_440.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_453.png" loading="lazy" alt="Rectangle" class="painting" id="item453" data-src="assets/images/item_453.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_467.png" loading="lazy" alt="Rectangle" class="painting" id="item467" data-src="assets/images/item_467.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_480.png" loading="lazy" alt="Rectangle" class="painting" id="item480" data-src="assets/images/item_480.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/02email.png" loading="lazy" alt="Rectangle" class="painting" id="item481" data-src="assets/images/emails/02email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/poems/01poem.png" loading="lazy" alt="Rectangle" class="painting" id="item481" data-src="assets/images/poems/01poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_517.png" loading="lazy" alt="Rectangle" class="painting" id="item517" data-src="assets/images/item_517.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_531.png" loading="lazy" alt="Rectangle" class="painting" id="item531" data-src="assets/images/item_531.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_544.png" loading="lazy" alt="Rectangle" class="painting" id="item544" data-src="assets/images/item_544.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_556.png" loading="lazy" alt="Rectangle" class="painting" id="item556" data-src="assets/images/item_556.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_568.png" loading="lazy" alt="Rectangle" class="painting" id="item568" data-src="assets/images/item_568.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_580.png" loading="lazy" alt="Rectangle" class="painting" id="item580" data-src="assets/images/item_580.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/03email.png" loading="lazy" alt="Rectangle" class="painting" id="item580" data-src="assets/images/emails/03email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_607.png" loading="lazy" alt="Rectangle" class="painting" id="item607" data-src="assets/images/item_607.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_620.png" loading="lazy" alt="Rectangle" class="painting" id="item620" data-src="assets/images/item_620.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_632.png" loading="lazy" alt="Rectangle" class="painting" id="item632" data-src="assets/images/item_632.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_644.png" loading="lazy" alt="Rectangle" class="painting" id="item644" data-src="assets/images/item_644.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_657.png" loading="lazy" alt="Rectangle" class="painting" id="item657" data-src="assets/images/item_657.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_671.png" loading="lazy" alt="Rectangle" class="painting" id="item671" data-src="assets/images/item_671.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/02poem.png" loading="lazy" alt="Rectangle" class="painting" id="item698" data-src="assets/images/poems/02poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_698.png" loading="lazy" alt="Rectangle" class="painting" id="item698" data-src="assets/images/item_698.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_4092.png" loading="lazy" alt="Rectangle" class="painting" id="item698" data-src="assets/images/item_4092.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_722.png" loading="lazy" alt="Rectangle" class="painting" id="item722" data-src="assets/images/item_722.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/04email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/04email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_749.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/item_749.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/05email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/05email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/03poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/03poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_786.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/item_786.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/06email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/06email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_813.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/item_813.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/07email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/07email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_838.png" loading="lazy" alt="Rectangle" class="painting" id="item838" data-src="assets/images/item_838.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_850.png" loading="lazy" alt="Rectangle" class="painting" id="item850" data-src="assets/images/item_850.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/11email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/11email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/12email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/12email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_889.png" loading="lazy" alt="Rectangle" class="painting" id="item889" data-src="assets/images/item_889.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/13email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/13email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_914.png" loading="lazy" alt="Rectangle" class="painting" id="item914" data-src="assets/images/item_914.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/14email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/14email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_939.png" loading="lazy" alt="Rectangle" class="painting" id="item939" data-src="assets/images/item_939.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_953.png" loading="lazy" alt="Rectangle" class="painting" id="item953" data-src="assets/images/item_953.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/15email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/15email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_978.png" loading="lazy" alt="Rectangle" class="painting" id="item978" data-src="assets/images/item_978.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_990.png" loading="lazy" alt="Rectangle" class="painting" id="item990" data-src="assets/images/item_990.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1002.png" loading="lazy" alt="Rectangle" class="painting" id="item1002" data-src="assets/images/item_1002.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1015.png" loading="lazy" alt="Rectangle" class="painting" id="item1015" data-src="assets/images/item_1015.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1029.png" loading="lazy" alt="Rectangle" class="painting" id="item1029" data-src="assets/images/item_1029.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/16email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/16email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1054.png" loading="lazy" alt="Rectangle" class="painting" id="item1054" data-src="assets/images/item_1054.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/17email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/17email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1080.png" loading="lazy" alt="Rectangle" class="painting" id="item1080" data-src="assets/images/item_1080.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/18email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/18email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1107.png" loading="lazy" alt="Rectangle" class="painting" id="item1107" data-src="assets/images/item_1107.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/19email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/19email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1131.png" loading="lazy" alt="Rectangle" class="painting" id="item1107" data-src="assets/images/item_1131.png" />
+      </div>
+      <!--ERROR-->
+      <div class="page">
+        <img src="assets/images/missing chats01.png" loading="lazy" alt="Rectangle" class="painting" id="item749" style="margin-top: -1px;" data-src="assets/images/missing chats01.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1156.png" loading="lazy" alt="Rectangle" class="painting" id="item1156" data-src="assets/images/item_1156.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/04poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/04poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/missingchats.png" loading="lazy" alt="Rectangle" class="painting" style="margin-top: -1px;" id="item749" data-src="assets/images/missingchats.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/20email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/20email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1207.png" loading="lazy" alt="Rectangle" class="painting" id="item1207" data-src="assets/images/item_1207.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1220.png" loading="lazy" alt="Rectangle" class="painting" id="item1220" data-src="assets/images/item_1220.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/05poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/05poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1248.png" loading="lazy" alt="Rectangle" class="painting" id="item1248" data-src="assets/images/item_1248.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1260.png" loading="lazy" alt="Rectangle" class="painting" id="item1260" data-src="assets/images/item_1260.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1272.png" loading="lazy" alt="Rectangle" class="painting" id="item1272" data-src="assets/images/item_1272.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1284.png" loading="lazy" alt="Rectangle" class="painting" id="item1284" data-src="assets/images/item_1284.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1297.png" loading="lazy" alt="Rectangle" class="painting" id="item1297" data-src="assets/images/item_1297.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/21email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/21email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1324.png" loading="lazy" alt="Rectangle" class="painting" id="item1324" data-src="assets/images/item_1324.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1336.png" loading="lazy" alt="Rectangle" class="painting" id="item1336" data-src="assets/images/item_1336.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1348.png" loading="lazy" alt="Rectangle" class="painting" id="item1348" data-src="assets/images/item_1348.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/06poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/06poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1375.png" loading="lazy" alt="Rectangle" class="painting" id="item1375" data-src="assets/images/item_1375.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/22email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/22email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1400.png" loading="lazy" alt="Rectangle" class="painting" id="item1400" data-src="assets/images/item_1400.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/23email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/23email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1424.png" loading="lazy" alt="Rectangle" class="painting" id="item1424" data-src="assets/images/item_1424.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/07poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/07poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1451.png" loading="lazy" alt="Rectangle" class="painting" id="item1451" data-src="assets/images/item_1451.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/08poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/08poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1476.png" loading="lazy" alt="Rectangle" class="painting" id="item1476" data-src="assets/images/item_1476.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1488.png" loading="lazy" alt="Rectangle" class="painting" id="item1488" data-src="assets/images/item_1488.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1501.png" loading="lazy" alt="Rectangle" class="painting" id="item1501" data-src="assets/images/item_1501.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1515.png" loading="lazy" alt="Rectangle" class="painting" id="item1515" data-src="assets/images/item_1515.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1528.png" loading="lazy" alt="Rectangle" class="painting" id="item1528" data-src="assets/images/item_1528.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1540.png" loading="lazy" alt="Rectangle" class="painting" id="item1540" data-src="assets/images/item_1540.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1552.png" loading="lazy" alt="Rectangle" class="painting" id="item1552" data-src="assets/images/item_1552.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1564.png" loading="lazy" alt="Rectangle" class="painting" id="item1564" data-src="assets/images/item_1564.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1577.png" loading="lazy" alt="Rectangle" class="painting" id="item1577" data-src="assets/images/item_1577.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1591.png" loading="lazy" alt="Rectangle" class="painting" id="item1591" data-src="assets/images/item_1591.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1604.png" loading="lazy" alt="Rectangle" class="painting" id="item1604" data-src="assets/images/item_1604.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/09poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/09poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/24email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/24email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1641.png" loading="lazy" alt="Rectangle" class="painting" id="item1641" data-src="assets/images/item_1641.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/25email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/25email..png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1668.png" loading="lazy" alt="Rectangle" class="painting" id="item1668" data-src="assets/images/item_1668.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1680.png" loading="lazy" alt="Rectangle" class="painting" id="item1680" data-src="assets/images/item_1680.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1692.png" loading="lazy" alt="Rectangle" class="painting" id="item1692" data-src="assets/images/item_1692.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1704.png" loading="lazy" alt="Rectangle" class="painting" id="item1704" data-src="assets/images/item_1704.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_8734.png" loading="lazy" alt="Rectangle" class="painting" id="item8734" data-src="assets/images/item_8734.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/26email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/26email..png" style="border-bottom: none !important" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/27email..png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/27email..png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (00).png" id="00placeholder" loading="lazy" style="display: none; width: 36.5%; height: 39%; top: 71.5%" class="videoX" />
+        <video onplay="showPlaceholderImage('00placeholder', this)" oncanplay="removePlaceholderImage('00placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 40%; top: 71.5%" class="videoX" controls src="assets/images/videos/00_video.mp4" poster="assets/images/videos/video_thumbnails/thumb (00).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1756.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1756" data-src="assets/images/item_1756.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1768.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1768" data-src="assets/images/item_1768.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1781.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1781" data-src="assets/images/item_1781.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/10poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/10poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1809.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1809" data-src="assets/images/item_1809.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1821.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1821" data-src="assets/images/item_1821.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1833.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1833" data-src="assets/images/item_1833.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/28email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/28email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1859.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1859" data-src="assets/images/item_1859.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/29email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/29email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1886.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1886" data-src="assets/images/item_1886.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1898.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1898" data-src="assets/images/item_1898.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1910.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1910" data-src="assets/images/item_1910.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1923.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1923" data-src="assets/images/item_1923.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_1938.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1938" data-src="assets/images/item_1938.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1951.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1951" data-src="assets/images/item_1951.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/30email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/30email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_1975.png" loading="lazy" alt="Rectangle" class="painting hd" id="item1975" data-src="assets/images/item_1975.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/31email..png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/31email..png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2000.png" loading="lazy" alt="Rectangle" class="painting" id="item2039" data-src="assets/images/item_2000.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/11poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/11poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/32email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/32email.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2039.png" loading="lazy" alt="Rectangle" class="painting" id="item2039" data-src="assets/images/item_2039.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/12poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/12poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/33email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/33email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2078.png" loading="lazy" alt="Rectangle" class="painting" id="item2078" data-src="assets/images/item_2078.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2091.png" loading="lazy" alt="Rectangle" class="painting" id="item2091" data-src="assets/images/item_2091.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2103.png" loading="lazy" alt="Rectangle" class="painting" id="item2103" data-src="assets/images/item_2103.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/13poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/13poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2127.png" loading="lazy" alt="Rectangle" class="painting" id="item2127" data-src="assets/images/item_2127.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2140.png" loading="lazy" alt="Rectangle" class="painting" id="item2140" data-src="assets/images/item_2140.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/34email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/34email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2167.png" loading="lazy" alt="Rectangle" class="painting" id="item2167" data-src="assets/images/item_2167.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2179.png" loading="lazy" alt="Rectangle" class="painting" id="item2179" data-src="assets/images/item_2179.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2191.png" loading="lazy" alt="Rectangle" class="painting" id="item2191" data-src="assets/images/item_2191.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/14poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/14poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2218.png" loading="lazy" alt="Rectangle" class="painting" id="item2218" data-src="assets/images/item_2218.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/35email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/35email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2243.png" loading="lazy" alt="Rectangle" class="painting" id="item2243" data-src="assets/images/item_2243.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/15poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/15poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2377.png" loading="lazy" alt="Rectangle" class="painting" id="item2377" data-src="assets/images/item_2377.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/poems/16poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/16poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2404.png" loading="lazy" alt="Rectangle" class="painting" id="item2404" data-src="assets/images/item_2404.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/36email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/36email.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2429.png" loading="lazy" alt="Rectangle" class="painting" id="item2429" data-src="assets/images/item_2429.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/17poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/17poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/37email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/37email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2468.png" loading="lazy" alt="Rectangle" class="painting" id="item2468" data-src="assets/images/item_2468.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2481.png" loading="lazy" alt="Rectangle" class="painting" id="item2481" data-src="assets/images/item_2481.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2493.png" loading="lazy" alt="Rectangle" class="painting" id="item2493" data-src="assets/images/item_2493.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/TripleSlash May 2024 Revisions -170.png" loading="lazy" alt="Rectangle" class="painting" id="item2505" data-src="assets/images/TripleSlash May 2024 Revisions -170.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2517.png" loading="lazy" alt="Rectangle" class="painting" id="item2517" data-src="assets/images/item_2517.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2530.png" loading="lazy" alt="Rectangle" class="painting" id="item2530" data-src="assets/images/item_2530.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2544.png" loading="lazy" alt="Rectangle" class="painting" id="item2544" data-src="assets/images/item_2544.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/38email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/38email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2569.png" loading="lazy" alt="Rectangle" class="painting" id="item2569" data-src="assets/images/item_2569.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2581.png" loading="lazy" alt="Rectangle" class="painting" id="item2581" data-src="assets/images/item_2581.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2594.png" loading="lazy" alt="Rectangle" class="painting" id="item2594" data-src="assets/images/item_2594.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/18poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/18poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2621.png" loading="lazy" alt="Rectangle" class="painting" id="item2621" data-src="assets/images/item_2621.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/poems/19poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/19poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2645.png" loading="lazy" alt="Rectangle" class="painting" id="item2645" data-src="assets/images/item_2645.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2657.png" loading="lazy" alt="Rectangle" class="painting" id="item2657" data-src="assets/images/item_2657.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2670.png" loading="lazy" alt="Rectangle" class="painting" id="item2670" data-src="assets/images/item_2670.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/39email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/39email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2697.png" loading="lazy" alt="Rectangle" class="painting" id="item2697" data-src="assets/images/item_2697.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/20poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/20poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/40email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/40email.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2734.png" loading="lazy" alt="Rectangle" class="painting" id="item2734" data-src="assets/images/item_2734.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/21poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/21poem.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/41email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/41email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (1).png" id="01placeholder" loading="lazy" style="width: 36.5%; height: 19%; top: 30.5%; display: none" class="videoX" />
+        <video onplay="showPlaceholderImage('01placeholder', this)" oncanplay="removePlaceholderImage('01placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 20%; top: 30.5%" class="videoX" controls src="assets/images/videos/01_Stop Motion Test.mp4" poster="assets/images/videos/video_thumbnails/thumb (1).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2773.png" loading="lazy" alt="Rectangle" class="painting" id="item2773" data-src="assets/images/item_2773.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2785.png" loading="lazy" alt="Rectangle" class="painting" id="item2785" data-src="assets/images/item_2785.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2797.png" loading="lazy" alt="Rectangle" class="painting" id="item2797" data-src="assets/images/item_2797.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2810.png" loading="lazy" alt="Rectangle" class="painting" id="item2810" data-src="assets/images/item_2810.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2824.png" loading="lazy" alt="Rectangle" class="painting" id="item2824" data-src="assets/images/item_2824.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2837.png" loading="lazy" alt="Rectangle" class="painting" id="item2837" data-src="assets/images/item_2837.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2849.png" loading="lazy" alt="Rectangle" class="painting" id="item2849" data-src="assets/images/item_2849.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2861.png" loading="lazy" alt="Rectangle" class="painting" id="item2861" data-src="assets/images/item_2861.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2874.png" loading="lazy" alt="Rectangle" class="painting" id="item2874" data-src="assets/images/item_2874.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2889.png" loading="lazy" alt="Rectangle" class="painting" id="item2889" data-src="assets/images/item_2889.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/22poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/22poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2914.png" loading="lazy" alt="Rectangle" class="painting" id="item2914" data-src="assets/images/item_2914.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2926.png" loading="lazy" alt="Rectangle" class="painting" id="item2926" data-src="assets/images/item_2926.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2938.png" loading="lazy" alt="Rectangle" class="painting" id="item2938" data-src="assets/images/item_2938.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/42email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/42email.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_2965.png" loading="lazy" alt="Rectangle" class="painting" id="item2965" data-src="assets/images/item_2965.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2978.png" loading="lazy" alt="Rectangle" class="painting" id="item2978" data-src="assets/images/item_2978.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_2990.png" loading="lazy" alt="Rectangle" class="painting" id="item2990" data-src="assets/images/item_2990.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3002.png" loading="lazy" alt="Rectangle" class="painting" id="item3002" data-src="assets/images/item_3002.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3015.png" loading="lazy" alt="Rectangle" class="painting" id="item3015" data-src="assets/images/item_3015.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3029.png" loading="lazy" alt="Rectangle" class="painting" id="item3029" data-src="assets/images/item_3029.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3042.png" loading="lazy" alt="Rectangle" class="painting" id="item3042" data-src="assets/images/item_3042.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/23poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/23poem.png" />
+      </div>
+
+      <div class="videoPage" style="margin-top: -4px; margin-bottom: 20px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (2).png" id="02placeholder" loading="lazy" class="video" style="display: none; padding-left: 27px" />
+          <video onplay="showPlaceholderImage('02placeholder', this)" oncanplay="removePlaceholderImage('02placeholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/02.mp4" poster="assets/images/videos/video_thumbnails/thumb (2).png"></video>
+        </div>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3078.png" loading="lazy" alt="Rectangle" class="painting" id="item3078" data-src="assets/images/item_3078.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3091.png" loading="lazy" alt="Rectangle" class="painting" id="item3091" data-src="assets/images/item_3091.png" />
+      </div>
+
+      <div class="videoPage" style="margin-top: -4px; margin-bottom: 20px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (3).png" id="03placeholder" loading="lazy" class="video" style="display: none; padding-left: 27px" />
+          <video onplay="showPlaceholderImage('03placeholder', this)" oncanplay="removePlaceholderImage('03placeholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/03_RTS.mp4" poster="assets/images/videos/video_thumbnails/thumb (3).png"></video>
+        </div>
+      </div>
+
+      <div class="videoPage" style="margin-top: -4px; margin-bottom: 20px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (4).png" id="04placeholder" loading="lazy" class="video" style="display: none; padding-left: 27px" />
+          <video onplay="showPlaceholderImage('04placeholder', this)" oncanplay="removePlaceholderImage('04placeholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/04_RTS.mp4" poster="assets/images/videos/video_thumbnails/thumb (4).png"></video>
+        </div>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3130.png" loading="lazy" alt="Rectangle" class="painting" id="item3130" data-src="assets/images/item_3130.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3142.png" loading="lazy" alt="Rectangle" class="painting" id="item3142" data-src="assets/images/item_3142.png" />
+      </div>
+
+      <div class="videoPage" style="margin-top: -4px; margin-bottom: 20px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (5a).png" id="05aplaceholder" loading="lazy" class="video" style="display: none; padding-left: 27px" />
+          <video onplay="showPlaceholderImage('05aplaceholder', this)" oncanplay="removePlaceholderImage('05aplaceholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/05a_hfs_002.mp4" poster="assets/images/videos/video_thumbnails/thumb (5a).png"></video>
+        </div>
+      </div>
+
+      <div class="videoPage" style="margin-top: -4px; margin-bottom: 20px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (5b).png" id="5bplaceholder" loading="lazy" class="video" style="display: none; padding-left: 27px" />
+          <video onplay="showPlaceholderImage('5bplaceholder', this)" oncanplay="removePlaceholderImage('5bplaceholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/05b_SMT_ST.mp4" poster="assets/images/videos/video_thumbnails/thumb (5b).png"></video>
+        </div>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/43email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/43email.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/44email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/44email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (6).png" id="6placeholder" loading="lazy" style="width: 36.5%; height: 26%; top: 27%; display: none" class="videoX" />
+        <video onplay="showPlaceholderImage('6placeholder', this)" oncanplay="removePlaceholderImage('6placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 26%; top: 27%" class="videoX" controls src="assets/images/videos/06_HFS.mp4" poster="assets/images/videos/video_thumbnails/thumb (6).png"></video>
+        <img src="assets/images/videos/video_thumbnails/thumb (7).png" id="7placeholder" loading="lazy" style="width: 36.5%; height: 26%; top: 54%; display: none" class="videoX" />
+        <video onplay="showPlaceholderImage('7placeholder', this)" oncanplay="removePlaceholderImage('7placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 26%; top: 54%" class="videoX" controls src="assets/images/videos/07_BWS.mp4" poster="assets/images/videos/video_thumbnails/thumb (7).png"></video>
+        <img src="assets/images/videos/video_thumbnails/thumb (8).png" id="8placeholder" loading="lazy" style="width: 36.5%; height: 26%; top: 81%; display: none" class="videoX" />
+        <video onplay="showPlaceholderImage('8placeholder', this)" oncanplay="removePlaceholderImage('8placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 26%; top: 81%" class="videoX" controls src="assets/images/videos/08_SD.mp4" poster="assets/images/videos/video_thumbnails/thumb (8).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3206.png" loading="lazy" alt="Rectangle" class="painting" id="item3206" data-src="assets/images/item_3206.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3218.png" loading="lazy" alt="Rectangle" class="painting" id="item3218" data-src="assets/images/item_3218.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3231.png" loading="lazy" alt="Rectangle" class="painting" id="item3231" data-src="assets/images/item_3231.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/45email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/45email.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/46email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/46email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (9).png" id="9placeholder" loading="lazy" style="display: none; width: 36.5%; height: 24.2%; top: 30%" class="videoX" />
+        <video onplay="showPlaceholderImage('9placeholder', this)" oncanplay="removePlaceholderImage('9placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 25%; top: 30%" class="videoX" controls src="assets/images/videos/09_TFAP.mp4" poster="assets/images/videos/video_thumbnails/thumb (9).png"></video>
+        <img src="assets/images/videos/video_thumbnails/thumb (10).png" id="10placeholder" loading="lazy" style="display: none; width: 36.5%; height: 24.2%; top: 55.5%" class="videoX" />
+        <video onplay="showPlaceholderImage('10placeholder', this)" oncanplay="removePlaceholderImage('10placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 25%; top: 55.5%" class="videoX" controls src="assets/images/videos/10_TFAS.mp4" poster="assets/images/videos/video_thumbnails/thumb (10).png"></video>
+        <img src="assets/images/videos/video_thumbnails/thumb (11).png" id="11placeholder" loading="lazy" style="display: none; width: 36.5%; height: 24.2%; top: 81%" class="videoX" />
+        <video onplay="showPlaceholderImage('11placeholder', this)" oncanplay="removePlaceholderImage('11placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 25%; top: 81%" class="videoX" controls src="assets/images/videos/11_TFAS.mp4" poster="assets/images/videos/video_thumbnails/thumb (11).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/47email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/47email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (12).png" id="12placeholder" loading="lazy" style="display: none; width: 36.3%; height: 46%; top: 65%" class="videoX" />
+        <video onplay="showPlaceholderImage('12placeholder', this)" oncanplay="removePlaceholderImage('12placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 50%; top: 65%" class="videoX" controls src="assets/images/videos/12_055.mp4" poster="assets/images/videos/video_thumbnails/thumb (12).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/48email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/48email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (13).png" id="13placeholder" loading="lazy" style="display: none; width: 36.3%; height: 45.5%; top: 66.3%" class="videoX" />
+        <video onplay="showPlaceholderImage('13placeholder', this)" oncanplay="removePlaceholderImage('13placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 49%; top: 66.3%" class="videoX" controls src="assets/images/videos/13_S8_00123.mp4" poster="assets/images/videos/video_thumbnails/thumb (13).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/49email.png" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/49email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (14).png" id="14placeholder" loading="lazy" style="display: none; width: 36.3%; height: 51.5%; top: 61%" class="videoX" />
+        <video onplay="showPlaceholderImage('14placeholder', this)" oncanplay="removePlaceholderImage('14placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 53%; top: 61%" class="videoX" controls src="assets/images/videos/14_Performance.mp4" poster="assets/images/videos/video_thumbnails/thumb (14).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/50email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/50email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (15).png" id="15placeholder" loading="lazy" style="display: none; width: 36.3%; height: 48.2%; top: 64%" class="videoX" />
+        <video onplay="showPlaceholderImage('15placeholder', this)" oncanplay="removePlaceholderImage('15placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 50%; top: 64%" class="videoX" controls src="assets/images/videos/15_tfad.mp4" poster="assets/images/videos/video_thumbnails/thumb (15).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/51email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/51email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (16).png" id="16placeholder" loading="lazy" style="display: none; width: 36.3%; height: 53%; top: 61%" class="videoX" />
+        <video onplay="showPlaceholderImage('16placeholder', this)" oncanplay="removePlaceholderImage('16placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 55%; top: 61%" class="videoX" controls src="assets/images/videos/16_TSAC_01332.mp4" poster="assets/images/videos/video_thumbnails/thumb (16).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/52email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/52email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (17).png" id="17placeholder" loading="lazy" style="display: none; width: 36.3%; height: 50%; top: 63%" class="videoX" />
+        <video onplay="showPlaceholderImage('17placeholder', this)" oncanplay="removePlaceholderImage('17placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 50%; top: 63%" class="videoX" controls src="assets/images/videos/17_tfv_055.mp4" poster="assets/images/videos/video_thumbnails/thumb (17).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3346.png" loading="lazy" alt="Rectangle" class="painting" id="item3346" data-src="assets/images/item_3346.png" />
+      </div>
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/53email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/53email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (18).png" id="18placeholder" loading="lazy" style="display: none; width: 36.3%; height: 53%; top: 60%" class="videoX" />
+
+        <video onplay="showPlaceholderImage('18placeholder', this)" oncanplay="removePlaceholderImage('18placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 55%; top: 60%" class="videoX" controls src="assets/images/videos/18_textoverlay.mp4" poster="assets/images/videos/video_thumbnails/thumb (18).png"></video>
+      </div>
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/54email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/54email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (19).png" id="19placeholder" loading="lazy" style="display: none; width: 36.3%; height: 50%; top: 63%" class="videoX" />
+        <video onplay="showPlaceholderImage('19placeholder', this)" oncanplay="removePlaceholderImage('19placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 51%; top: 63%" class="videoX" controls src="assets/images/videos/19_rapid_edits.mp4" poster="assets/images/videos/video_thumbnails/thumb (19).png"></video>
+      </div>
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/55email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/55email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (20).png" id="20placeholder" loading="lazy" style="display: none; width: 36.3%; height: 47%; top: 64%" class="videoX" />
+        <video onplay="showPlaceholderImage('20placeholder', this)" oncanplay="removePlaceholderImage('20placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 51%; top: 64%" class="videoX" controls src="assets/images/videos/20_TFC02312.mp4" poster="assets/images/videos/video_thumbnails/thumb (20).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/56email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/56email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (21).png" id="21placeholder" loading="lazy" style="display: none; width: 36.5%; height: 28.5%; top: 49%" class="videoX" />
+        <video onplay="showPlaceholderImage('21placeholder', this)" oncanplay="removePlaceholderImage('21placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 28.5%; top: 49%" class="videoX" controls src="assets/images/videos/21_TFAPF_3115332.mp4" poster="assets/images/videos/video_thumbnails/thumb (21).png"></video>
+
+        <img src="assets/images/videos/video_thumbnails/thumb (22).png" id="22placeholder" loading="lazy" style="display: none; width: 36.5%; height: 28.5%; top: 79.6%" class="videoX" />
+        <video onplay="showPlaceholderImage('22placeholder', this)" oncanplay="removePlaceholderImage('22placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.5%; height: 28.5%; top: 79.6%" class="videoX" controls src="assets/images/videos/22_TFAPF_023112.mp4" poster="assets/images/videos/video_thumbnails/thumb (22).png"></video>
+      </div>
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/57email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/57email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (23a).png" id="23aplaceholder" loading="lazy" style="display: none; width: 36.3%; height: 32%; top: 42%" class="videoX" />
+        <video onplay="showPlaceholderImage('23aplaceholder', this)" oncanplay="removePlaceholderImage('23aplaceholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 32%; top: 42%" class="videoX" controls src="assets/images/videos/23a_TFASH_0112.mp4" poster="assets/images/videos/video_thumbnails/thumb (23a).png"></video>
+
+        <img src="assets/images/videos/video_thumbnails/thumb (23b).png" id="23bplaceholder" loading="lazy" style="display: none; width: 36.3%; height: 32%; top: 77%" class="videoX" />
+        <video onplay="showPlaceholderImage('23bplaceholder', this)" oncanplay="removePlaceholderImage('23bplaceholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 32%; top: 76%" class="videoX" controls src="assets/images/videos/23b_run_234.mp4" poster="assets/images/videos/video_thumbnails/thumb (23b).png"></video>
+      </div>
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/58email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/58email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (24).png" id="24placeholder" loading="lazy" style="display: none; width: 36.3%; height: 40.7%; top: 70%" class="videoX" />
+        <video onplay="showPlaceholderImage('24placeholder', this)" oncanplay="removePlaceholderImage('24placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 45%; top: 70%" class="videoX" controls src="assets/images/videos/24_TFAS_13325.mp4" poster="assets/images/videos/video_thumbnails/thumb (24).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/59email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/59email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (25).png" id="25placeholder" loading="lazy" style="display: none; width: 36.3%; height: 47%; top: 65%" class="videoX" />
+        <video onplay="showPlaceholderImage('25placeholder', this)" oncanplay="removePlaceholderImage('25placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 50%; top: 65%" class="videoX" controls src="assets/images/videos/25_TFAMUSP_1222332112.mp4" poster="assets/images/videos/video_thumbnails/thumb (25).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/60email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/60email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (26).png" id="26placeholder" loading="lazy" style="display: none; width: 36.3%; height: 28.5%; top: 48%" class="videoX" />
+        <video onplay="showPlaceholderImage('26placeholder', this)" oncanplay="removePlaceholderImage('26placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 30%; top: 48%" class="videoX" controls src="assets/images/videos/26_TFNO_11232.mp4" poster="assets/images/videos/video_thumbnails/thumb (26).png"></video>
+
+        <img src="assets/images/videos/video_thumbnails/thumb (26a).png" id="26aplaceholder" loading="lazy" style="display: none; width: 36.3%; height: 28.7%; top: 78.9%" class="videoX" />
+        <video onplay="showPlaceholderImage('26aplaceholder', this)" oncanplay="removePlaceholderImage('26aplaceholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 30%; top: 78.9%" class="videoX" controls src="assets/images/videos/26a_rhyme06.mp4" poster="assets/images/videos/video_thumbnails/thumb (26a).png"></video>
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/61email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/61email.png" />
+
+        <img src="assets/images/videos/video_thumbnails/thumb (27).png" id="27placeholder" loading="lazy" style="display: none; width: 36.3%; height: 46.5%; top: 65%" class="videoX" />
+        <video onplay="showPlaceholderImage('27placeholder', this)" oncanplay="removePlaceholderImage('27placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 50%; top: 65%" class="videoX" controls src="assets/images/videos/27_TFAINL_223321213.mp4" poster="assets/images/videos/video_thumbnails/thumb (27).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/62email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/62email.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3489.png" loading="lazy" alt="Rectangle" class="painting" id="item3489" data-src="assets/images/item_3489.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_13737.png" loading="lazy" alt="Rectangle" class="painting" id="item13737" data-src="assets/images/item_13737.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3515.png" loading="lazy" alt="Rectangle" class="painting" id="item3515" data-src="assets/images/item_3515.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3530.png" loading="lazy" alt="Rectangle" class="painting" id="item3530" data-src="assets/images/item_3530.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3544.png" loading="lazy" alt="Rectangle" class="painting" id="item3544" data-src="assets/images/item_3544.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3556.png" loading="lazy" alt="Rectangle" class="painting" id="item3556" data-src="assets/images/item_3556.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/emails/63email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/63email.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/25poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/25poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3596.png" loading="lazy" alt="Rectangle" class="painting" id="item3596" data-src="assets/images/item_3596.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/poems/26poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/26poem.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3621.png" loading="lazy" alt="Rectangle" class="painting" id="item3621" data-src="assets/images/item_3621.png" />
+      </div>
+
+      <!--XX-->
+      <div class="videoPage" style="margin-top: -4px; margin-bottom: 20px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (28).png" id="28placeholder" loading="lazy"  style="display: none; padding-left: 27px" class="video" />
+          <video onplay="showPlaceholderImage('28placeholder', this)" oncanplay="removePlaceholderImage('28placeholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/28_Seb sleep.mp4" poster="assets/images/videos/video_thumbnails/thumb (28).png"></video>
+        </div>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3645.png" loading="lazy" alt="Rectangle" class="painting" id="item3645" data-src="assets/images/item_3645.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3658.png" loading="lazy" alt="Rectangle" class="painting" id="item3658" data-src="assets/images/item_3658.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3672.png" loading="lazy" alt="Rectangle" class="painting" id="item3672" data-src="assets/images/item_3672.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3685.png" loading="lazy" alt="Rectangle" class="painting" id="item3685" data-src="assets/images/item_3685.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/poems/27poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/27poem.png" />
+      </div>
+
+      <div class="page" data-name="264">
+        <img src="assets/images/item_3709.png" loading="lazy" alt="Rectangle" class="painting hd" id="item3709" data-src="assets/images/item_3709.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/poems/28poem (2).png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/28poem (2).png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/65email.png" loading="lazy" alt="Rectangle" class="painting hd" id="item3749" data-src="assets/images/emails/65email.png" />
+      </div>
+      <div class="videoPage" style="margin-top: -4px; margin-bottom: 20px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (29).png" id="29placeholder" loading="lazy"  style="display: none; padding-left: 25px" class="video" />
+          <video onplay="showPlaceholderImage('29placeholder', this)" oncanplay="removePlaceholderImage('29placeholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/29_Seb Study for a portrait.mp4" poster="assets/images/videos/video_thumbnails/thumb (29).png"></video>
+        </div>
+      </div>
+
+      <div class="page" data-name="268">
+        <img src="assets/images/item_3761.png" loading="lazy" alt="Rectangle" class="painting hd" id="item3761" data-src="assets/images/item_3761.png" />
+      </div>
+      <div class="page" data-name="269">
+        <img src="assets/images/item_3773.png" loading="lazy" alt="Rectangle" class="painting hd" id="item3773" data-src="assets/images/item_3773.png" />
+      </div>
+      <div class="page" data-name="270">
+        <img src="assets/images/item_3785.png" loading="lazy" alt="Rectangle" class="painting hd" id="item3785" data-src="assets/images/item_3785.png" />
+      </div>
+
+      <div class="page">
+        <img src="assets/images/poems/29poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/29poem.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/emails/66email.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/emails/66email.png" />
+      </div>
+
+      <div class="page" data-name="272"></div>
+      <div class="padding"></div>
+      <div class="page" data-name="273">
+        <img src="assets/images/item_3825.png" loading="lazy" alt="Rectangle" class="painting" id="item3825" data-src="assets/images/item_3825.png" />
+      </div>
+      <div class="page" data-name="274">
+        <img src="assets/images/item_3837.png" loading="lazy" alt="Rectangle" class="painting" id="item3837" data-src="assets/images/item_3837.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/67email.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/emails/67email.png" />
+        
+        <img src="assets/images/videos/video_thumbnails/thumb (30).png" id="30placeholder" loading="lazy" style="display: none; width: 36.3%; height: 35%; top: 36.9%" class="videoX" />
+        <video onplay="showPlaceholderImage('30placeholder', this)" oncanplay="removePlaceholderImage('30placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 37%; top: 36.9%" class="videoX" controls src="assets/images/videos/30.mp4" poster="assets/images/videos/video_thumbnails/thumb (30).png"></video>
+        
+        <img src="assets/images/videos/video_thumbnails/thumb(30a).png" id="30aplaceholder" loading="lazy" style="display: none; width: 36.3%; height: 35%; top: 74.5%" class="videoX" />
+        <video onplay="showPlaceholderImage('30aplaceholder', this)" oncanplay="removePlaceholderImage('30aplaceholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 37%; top: 74.5%" class="videoX" controls src="assets/images/videos/30a_0232_thous.mp4" poster="assets/images/videos/video_thumbnails/thumb(30a).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/poems/30poem.png" loading="lazy" alt="Rectangle" class="painting" id="item749" data-src="assets/images/poems/30poem.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/68email.png" loading="lazy" class="backgroundImage" data-src="assets/images/emails/68email.png" />
+        <img src="assets/images/videos/video_thumbnails/thumb (31).png" id="31placeholder" loading="lazy" style="display: none; width: 36.3%; height: 55.5%; top: 58%" class="videoX" />
+        <video onplay="showPlaceholderImage('31placeholder', this)" oncanplay="removePlaceholderImage('31placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 58%; top: 58%" class="videoX" controls src="assets/images/videos/31_tfassd023.mp4" poster="assets/images/videos/video_thumbnails/thumb (31).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3889.png" loading="lazy" alt="Rectangle" class="painting" id="item3889" data-src="assets/images/item_3889.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/emails/69email.png" loading="lazy" class="backgroundImage" data-src="assets/images/emails/68email.png" />
+        
+        <img src="assets/images/videos/video_thumbnails/thumb (32).png" id="32placeholder" loading="lazy" style="display: none; width: 36.3%; height: 62%; top: 55%" class="videoX" />
+        <video onplay="showPlaceholderImage('32placeholder', this)" oncanplay="removePlaceholderImage('32placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36.3%; height: 63.5%; top: 55%" class="videoX" controls src="assets/images/videos/32_Test_Edited_Rezz.mp4" poster="assets/images/videos/video_thumbnails/thumb (32).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3913.png" loading="lazy" alt="Rectangle" class="painting" id="item3913" data-src="assets/images/item_3913.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3925.png" loading="lazy" alt="Rectangle" class="painting" id="item3925" data-src="assets/images/item_3925.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3938.png" loading="lazy" alt="Rectangle" class="painting" id="item3938" data-src="assets/images/item_3938.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/item_3952.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/item_3952.png" />
+        
+        <img src="assets/images/videos/video_thumbnails/thumb (33).png" id="33placeholder" loading="lazy" style="display: none; width: 36%; height: 36.7%; top: 33%" class="videoX" />
+        <video onplay="showPlaceholderImage('33placeholder', this)" oncanplay="removePlaceholderImage('33placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36%; height: 37%; top: 33%" class="videoX" controls src="assets/images/videos/33_TfefW01.mp4" poster="assets/images/videos/video_thumbnails/thumb (33).png"></video>
+        <img src="assets/images/videos/video_thumbnails/thumb (34).png" id="34placeholder" loading="lazy" style="display: none; width: 36%; height: 36.7%; top: 73%" class="videoX" />
+        <video onplay="showPlaceholderImage('34placeholder', this)" oncanplay="removePlaceholderImage('34placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36%; height: 37%; top: 73%" class="videoX" controls src="assets/images/videos/34.mp4" poster="assets/images/videos/video_thumbnails/thumb (34).png"></video>
+      </div>
+
+      <div class="page">
+        <img src="assets/images/item_3965.png" loading="lazy" alt="Rectangle" class="painting" id="item3965" data-src="assets/images/item_3965.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3977.png" loading="lazy" alt="Rectangle" class="painting" id="item3977" data-src="assets/images/item_3977.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_3989.png" loading="lazy" alt="Rectangle" class="painting" id="item3989" data-src="assets/images/item_3989.png" />
+      </div>
+
+      <div class="multipleVideoContainer" style="margin-top: -5px">
+        <img src="assets/images/item_4002.png" loading="lazy" class="backgroundImage" style="width: 100%; background-color: white" id="item4016" data-src="assets/images/item_4016.png" />
+       
+        <img src="assets/images/videos/video_thumbnails/thumb (35).png" id="35placeholder" loading="lazy" style="display: none; width: 36%; height: 36.7%; top: 33%" class="videoX" />
+        <video onplay="showPlaceholderImage('35placeholder', this)" oncanplay="removePlaceholderImage('35placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36%; height: 37%; top: 33%" class="videoX" controls src="assets/images/videos/35_TFEFW_03.mp4" poster="assets/images/videos/video_thumbnails/thumb (35).png"></video>
+        <img src="assets/images/videos/video_thumbnails/thumb (36).png" id="36placeholder" loading="lazy" style="display: none; width: 36%; height: 36.7%; top: 73%" class="videoX" />
+        <video onplay="showPlaceholderImage('36placeholder', this)" oncanplay="removePlaceholderImage('36placeholder', this)" onclick="handlePlayButton(this)" preload="none" style="width: 36%; height: 37%; top: 73%" class="videoX" controls src="assets/images/videos/36_TFEFW_04.mp4" poster="assets/images/videos/video_thumbnails/thumb (36).png"></video>
+      </div>
+
+      <!-- <div class="page">
+        <img src="assets/images/item_4016.png" loading="lazy" alt="Rectangle" class="painting" id="item4016" data-src="assets/images/item_4016.png" />
+      </div> -->
+      <div class="page">
+        <img src="assets/images/TripleSlash May 2024 Revisions -288.png" loading="lazy" alt="Rectangle" class="painting" id="item4016" data-src="assets/images/TripleSlash May 2024 Revisions -288.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_4029.png" loading="lazy" alt="Rectangle" class="painting" id="item4029" data-src="assets/images/item_4029.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_4041.png" loading="lazy" alt="Rectangle" class="painting" id="item4041" data-src="assets/images/item_4041.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_4053.png" loading="lazy" alt="Rectangle" class="painting" id="item4053" data-src="assets/images/item_4053.png" />
+      </div>
+      <div class="page">
+        <img src="assets/images/item_4065.png" loading="lazy" alt="Rectangle" class="painting" id="item4065" data-src="assets/images/item_4065.png" />
+      </div>
+
+      <div class="videoPage" style="margin-top: -4px">
+        <div class="video-container">
+          <img src="assets/images/videos/video_thumbnails/thumb (37).png" id="37placeholder" loading="lazy" class="video" style="display: none; padding-left: 27px" />
+
+          <video onplay="showPlaceholderImage('37placeholder', this)" oncanplay="removePlaceholderImage('37placeholder', this)" onclick="handlePlayButton(this)" preload="none" controls class="video" src="assets/images/videos/37_final_cjn_nn_.mp4" poster="assets/images/videos/video_thumbnails/thumb (37).png"></video>
+        </div>
+      </div>
+
+      <div class="padding"></div>
+      <div class="page">
+        <img loading="lazy" src="assets/images/item_4092.png" alt="Rectangle" class="painting" id="item4092" data-src="assets/images/item_4092.png" />
+      </div>
+    </div>
+  </body>
+</html>

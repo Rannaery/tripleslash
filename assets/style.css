@@ -1,0 +1,119 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100%;
+  overflow-x: hidden;
+}
+.page {
+  margin-top: -5px;
+  background-color: white;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.painting {
+  width: 100%;
+  /* min-width: 10px; */
+  /* min-height: 300px; */
+  min-height: 100px;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+.paintingX {
+  width: 100%;
+  /* min-width: 10px; */
+  /* min-height: 300px; */
+  min-height: 100px;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+
+
+.padding{
+  height: 10px;
+  width:100%;
+  background-color: #f3f3f3;
+} 
+
+.videoPage {
+  background-color: #f3f3f3;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container {
+  border:1.5px solid #bbb;	
+  background-color: white;
+  width: 43.5%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.video{
+  width: 95%;
+  height: 95%;
+  margin-top: 10px;
+  margin-bottom: 4px; 
+  padding: 7px;
+}
+
+.videoX{
+  position: absolute; 
+
+  left: 50%; 
+  transform: translate(-50%, -50%)
+}
+
+.backgroundImage{
+  width: 100%; 
+  background-color: white
+}
+
+.multipleVideoContainer{
+  position: relative;
+}
+
+@media only screen and (max-width: 1080px) {
+  .painting {
+    width: 225%;
+    min-height: 100px;
+  }
+  .paintingX {
+    width: 225%;
+    min-height: 100px;
+  }
+  .video-container{
+    width: 98%
+  }
+  .videopageX{
+    width: 225%
+  }
+  .multipleVideoContainer{
+    width: 225%;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+  }
+}
+
+
+
+
